@@ -11,6 +11,10 @@ Developed for the **Cybersecurity Hackathon conducted by the Cybersecurity Club 
 
 GreatSage_Raphael is an offline desktop tool that analyzes packet captures and explains network faults and suspicious activity with likely causes, suggested fixes, and exact packet evidence.
 
+## Project demo
+
+[Watch the project demo on YouTube](https://youtu.be/AsdoMCevr6g).
+
 ## Download the standalone tool
 
 **[Download for Ubuntu — GitHub Releases](https://github.com/sharad00004/GreatSage_Raphael/releases/latest)** · **[Public download page](https://sharad00004.github.io/GreatSage_Raphael/)**
