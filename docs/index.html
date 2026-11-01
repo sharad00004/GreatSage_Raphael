@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Download GreatSage_Raphael, an offline Linux desktop tool for network capture analysis with explanations and packet evidence.">
+  <meta name="theme-color" content="#080e1d">
+  <title>GreatSage_Raphael — Download for Ubuntu</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header>
+      <a class="brand" href="./"><img src="assets/icon.png" alt="" width="44" height="42"><span>GreatSage_Raphael</span></a>
+      <nav aria-label="Main navigation"><a href="#install">Installation</a><a href="https://github.com/sharad00004/GreatSage_Raphael">GitHub <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="title">
+        <div class="introduction">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> OFFLINE NETWORK DIAGNOSTICS</p>
+          <h1 id="title">GreatSage_<br><span>Raphael</span></h1>
+          <p class="lead">Analyze packet captures.<br>Understand findings with exact evidence.</p>
+          <p class="summary">A Linux desktop tool for PCAP and PCAPNG files, with plain-language explanations, likely causes, and practical next steps. Capture data stays on the computer.</p>
+          <div class="actions"><a class="button primary" href="https://github.com/sharad00004/GreatSage_Raphael/releases/latest">Download on GitHub <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/sharad00004/GreatSage_Raphael#readme">Read the README</a></div>
+          <p class="compatibility">Ubuntu 24.04+ · x86-64 / amd64 · glibc 2.39+</p>
+        </div>
+        <aside class="download-card" aria-label="Standalone release details">
+          <div class="emblem"><img src="assets/icon.png" alt="Masked slime application icon" width="145" height="137"></div>
+          <div class="release-title"><span class="label">STANDALONE RELEASE</span><span class="version">v1.0.1</span></div>
+          <h2>Ready for Ubuntu</h2>
+          <p>Python, Tcl/Tk, and the application icon are included. No pip, sudo, or internet connection is needed to install the downloaded archive.</p>
+          <dl><div><dt>Format</dt><dd>.tar.gz</dd></div><div><dt>Download size</dt><dd>About 12 MB</dd></div><div><dt>Architecture</dt><dd>64-bit x86</dd></div><div><dt>Verification</dt><dd>SHA-256 included</dd></div></dl>
+          <a class="release-link" href="https://github.com/sharad00004/GreatSage_Raphael/releases/latest">View release files <span aria-hidden="true">→</span></a>
+        </aside>
+      </section>
+      <section class="features" aria-label="Application features">
+        <article><span class="number">01 / ANALYZE</span><h2>Network observations</h2><p>Inspect TCP, UDP DNS, ARP, DHCP, and ICMP traffic over supported IPv4/IPv6 Ethernet captures.</p></article>
+        <article><span class="number">02 / INVESTIGATE</span><h2>Exact packet evidence</h2><p>Review each finding's severity, confidence, cause, suggested fix, and referenced packets.</p></article>
+        <article><span class="number">03 / KEEP LOCAL</span><h2>Offline processing</h2><p>Analyze captures and export JSON reports locally, with bounded input handling and cancellation.</p></article>
+      </section>
+      <section id="install" class="installation" aria-labelledby="install-title">
+        <div class="section-heading"><p class="eyebrow">GET STARTED</p><h2 id="install-title">Download. Extract. Install.</h2><p>Use the standalone archive for installation, or follow the repository README to run from source.</p></div>
+        <ol class="steps">
+          <li><div class="step-number">1</div><div><h3>Download the release archive</h3><p>Open <a href="https://github.com/sharad00004/GreatSage_Raphael/releases/latest">GitHub Releases</a> and download <code>GreatSage_Raphael-1.0.1-linux-x86_64.tar.gz</code>. The accompanying <code>.sha256</code> file can verify the download. Choose the application archive, rather than GitHub's “Source code” ZIP.</p></div></li>
+          <li><div class="step-number">2</div><div><h3>Extract and install</h3><p>Open a terminal in the directory containing the downloaded archive, then run:</p><pre><code>tar -xzf GreatSage_Raphael-1.0.1-linux-x86_64.tar.gz
+cd GreatSage_Raphael-1.0.1-linux-x86_64
+./install.sh --desktop</code></pre><p class="hint">The installer adds an application-menu entry and desktop shortcut for the current account. No sudo is required.</p></div></li>
+          <li><div class="step-number">3</div><div><h3>Open the application</h3><p>Launch <strong>GreatSage_Raphael</strong> from the application menu or desktop. Alternatively:</p><pre><code>~/.local/bin/greatsage-raphael</code></pre><p>Select <strong>Open capture</strong>, choose a PCAP or PCAPNG file, and select a finding to inspect its details. Five <a href="https://github.com/sharad00004/GreatSage_Raphael/tree/main/sample_captures">sample captures</a> are available in the repository.</p></div></li>
+        </ol>
+        <details><summary>Verify the downloaded archive</summary><p>Place both downloaded files in the same directory and run:</p><pre><code>sha256sum -c GreatSage_Raphael-1.0.1-linux-x86_64.tar.gz.sha256</code></pre></details>
+        <details><summary>Uninstall the application</summary><pre><code>~/.local/share/greatsage-raphael/uninstall.sh</code></pre><p>Captures and reports outside the installation directory are preserved.</p></details>
+      </section>
+      <section class="notice"><h2>Interpret findings in context</h2><p>Findings are observations, not proof of malicious intent. No findings does not establish network safety. Supported protocols and analysis limitations are documented in the <a href="https://github.com/sharad00004/GreatSage_Raphael#scope-and-limitations">repository README</a>.</p></section>
+    </main>
+    <footer><div><strong>GreatSage_Raphael</strong><p>Team Inky Pinky Ponky · Cybersecurity Hackathon</p></div><div class="footer-links"><a href="https://github.com/sharad00004/GreatSage_Raphael">Repository</a><a href="https://github.com/sharad00004/GreatSage_Raphael/releases/latest">Downloads</a><a href="https://github.com/sharad00004/GreatSage_Raphael#artwork-credits-and-disclaimer">Artwork credits</a></div></footer>
+  </div>
+</body>
+</html>
